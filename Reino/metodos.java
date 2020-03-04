@@ -10,7 +10,12 @@ package Reino;
  * @author Yo
  */
 public class metodos extends valores{
-
+    
+    public metodos(){        
+    super();    
+    } 
+    
+    
     public void Fin (){
         if(Pueblo == 0 || Pueblo == 100) {
             System.out.println("Mi lord el pueblo esta prosperando demasiado la opinion publica ya no le necesita");
@@ -31,4 +36,21 @@ public class metodos extends valores{
         
     
     }
+    //subir Pueblo bajar Recursos
+    public void invertirMateriales(){                
+        Pueblo = Pueblo -10;        
+        Recursos = Recursos - 10;      
+    }
+    //Baja Pueblo sube Dinero
+    public void recaudarImpuestos(){
+        Pueblo = Pueblo -10;        
+        Dinero = Dinero +(int) (Math.random()*15);                         
+    
+    }
+    
+    
+    
+    
+    
+    
 }
